@@ -9,7 +9,8 @@ void	sort(int *array, size_t size, size_t lo, size_t hi);
  **/
 void quick_sort(int *array, size_t size)
 {
-	sort(array, size,  0, size - 1);
+	if (size > 1)
+		sort(array, size,  0, size - 1);
 }
 
 /**
