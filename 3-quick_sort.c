@@ -46,7 +46,7 @@ void	sort(int *array, size_t size, size_t lo, size_t hi)
 		}
 		++j;
 	}
-	if (hi != i)
+	if (hi != i && array[hi] != array[i])
 	{
 		array[hi] = array[i];
 		array[i] = pivot;
